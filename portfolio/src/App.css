@@ -2,9 +2,25 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App-carrot2 {
+  animation: App-logo-spin 5s linear;
+  height: 25vmin;
+  animation-delay: 1s;
+  animation-duration: 8s;
+}
+
+.App-carrot3 {
+  animation: App-logo-spin 9s linear;
+  height: 20vmin;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+
+.App-carrot{
+  animation: App-logo-spin 7s linear;
+  height: 20vmin;
+  animation-delay: 3s;
+  animation-duration: 12s;
 }
 
 .App-header {
@@ -22,6 +38,10 @@
   color: #61dafb;
 }
 
+p {
+  font-size: 8vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -29,4 +49,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
 }
