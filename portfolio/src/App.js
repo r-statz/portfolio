@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import carrot from './carrot.svg';
-import carrot2 from './carrot2.svg';
-import carrot3 from './carrot3.svg';
-import carrotBent from './carrotBent.svg';
-import carrotBent2 from './carrotBent2.svg';
-import carrotBent3 from './carrotBent3.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Design from './Design'
+import About from './About'
+import Contact from './Contact'
+import Apps from './Apps'
+import Footer from './Footer'
+import carrot from './carrot.svg'
+import  './App.css'
+
 
 class App extends Component {
   render() {
@@ -13,31 +14,24 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="row">
-          <img src={carrotBent2} className="App-carrot2" alt="carrot" />
-          <img src={carrot} className="App-carrot3" alt="carrot" />
-          <img src={carrotBent3} className="App-carrot" alt="carrot" />
-        </div>
-        <div className="row">
-        <img src={carrotBent} className="App-carrot" alt="carrot" />
-        <img src={carrot3} className="App-carrot3" alt="carrot" />
-        <img src={carrot2} className="App-carrot2" alt="carrot" />
-      </div>
-
-          <p>
-            PORTFOLIOHOLIO
-          </p>
-          <div
-            className=""
-            href="https://"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Plant  Eater
+            <img src={carrot} className="App-logo" alt="carrot" />
           </div>
+          <div className="row">
+          </div>
+            <p>
+            Enter if you Dare...
+            </p>
         </header>
-      </div>
+        <main>
+          <Apps />
+          <Design />
+          <About />
+          <Contact />
+          <Footer />
+        </main>
+    </div>
     );
   }
 }
 
-export default App;
+export default App
